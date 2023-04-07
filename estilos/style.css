@@ -14,10 +14,62 @@
 }
 
 body, html {
-    background-color: #5f2c82;
+    background-color: #5f2c82;      
 }
 
 main {
-    background-color: white;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+section#login {  
+    margin: auto;
+    background-color:white;  
+    height: 515px;
+    width: 250px;  
+    border-radius: 20px;
+}
+
+div#imagem {
+    background-image: url(../imagens/predio.jpg);
+    background-size: cover; 
+    background-position: center;  
+    width: 250px;
+    height: 200px;
+    background-repeat: no-repeat;
+    border-radius: 20px 20px 0px 0px;
+}
+
+div#formulario {
+    padding: 9px;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    padding: 10px;    
+}
+
+#formulario p {
+    text-align: left;
+    font-size: 0.8em;
+}
+
+form .campos{
+    background-color: #5f2c82;
+    margin: 10px 0px;
+    border-radius: 8px;
+    height: 40px;
+    color: white;
+}
+
+form > p.campos > input{
+    background-color: #94CFCD;
+    border-radius: 8px;    
+    height: 36px;
+    border: none;
+    
+    
 }
 

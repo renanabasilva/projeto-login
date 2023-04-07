@@ -10,19 +10,17 @@
 <body>
     <main>
         <section id="login">
-            <div id="imagem">
-                <img src="imagens/predio.jpg" alt="foto predio">
-            </div>
-            <div id="formulário">
+            <div id="imagem"></div>
+            <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
                 <form action="login.php" method="post" autocomplete="on">
-                    <p>
+                    <p class="campos">
                         <label for="iemail"><span class="material-symbols-outlined">account_circle</span></label>
                         <input type="email" name="email" id="iemail" required placeholder="E-mail">
                     </p>
 
-                    <p>
+                    <p class="campos">
                         <label for="isenha"><span class="material-symbols-outlined">key</span></label>
                         <input type="password" name="senha" id="isenha" required placeholder="Senha" minlength="8">
                     </p>
