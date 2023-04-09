@@ -30,13 +30,16 @@ section#login {
     height: 515px;
     width: 250px;  
     border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 div#imagem {
     background-image: url(../imagens/predio.jpg);
     background-size: cover; 
     background-position: center;  
-    width: 250px;
+    width: 100%;
     height: 200px;
     background-repeat: no-repeat;
     border-radius: 20px 20px 0px 0px;
@@ -51,25 +54,80 @@ div#formulario > h1 {
     padding: 10px;    
 }
 
-#formulario p {
+#formulario > p {
     text-align: left;
     font-size: 0.8em;
 }
 
-form .campos{
+div.campos{
     background-color: #5f2c82;
-    margin: 10px 0px;
+    margin: 5px 0px;
     border-radius: 8px;
     height: 40px;
-    color: white;
+    color: white;    
 }
 
-form > p.campos > input{
+div.campos span {
+    width: 40px;
+    font-size: 1.8em;
+    padding: 7px;
+    
+}
+
+div.campos > input{
     background-color: #94CFCD;
     border-radius: 8px;    
-    height: 36px;
+    height: 90%;
+    width: calc(100% - 46px);
     border: none;
-    
-    
+    padding-left: 5px;
+    transform: translateY(-10px);
 }
 
+div.campos > input:focus {
+    background-color: white;
+}
+
+div.campos > label {
+    display: none;
+}
+
+div.outros > input {
+    display: block;
+    background-color: #49a09d;
+    color: white;
+    border: none;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+}
+
+div.outros > input:hover {
+    background-color: #2D6462;
+    cursor: pointer;
+}
+
+div.outros > a.botao {
+    display: block;
+    background-color: white;
+    color: #357471;
+    border: 2px solid #49a09d;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 5px;
+    height: 40px;
+    padding: 6px;
+}
+
+div.outros > a.botao:hover {
+    background-color: #6CD3CF;
+}
+
+div.outros span {
+    transform: translateY(4px);
+    font-size: 1.2em;
+}
